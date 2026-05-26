@@ -10,7 +10,7 @@ import dagshub
 
 class ModelPusher:
     def __init__(self): 
-        dagshub.init(repo_owner='ogunladeesther01', 
+        dagshub.init(repo_owner='ogunlademodupeola', 
                      repo_name='Shopease_Sentiment_Project', 
                      mlflow=True)
         

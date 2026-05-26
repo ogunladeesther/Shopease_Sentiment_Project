@@ -28,7 +28,7 @@ def get_best_f1(experiment_name = "Shopease_Sentiment_Analysis"):
     return best_runs.data.metrics.get('f1', 0)
 
 def load_registered_model(model_name = registered_model_name):
-    dagshub.init(repo_owner='ogunladeesther01', repo_name='Shopease_Sentiment_Project', mlflow=True)
+    dagshub.init(repo_owner='ogunlademodupeola', repo_name='Shopease_Sentiment_Project', mlflow=True)
     model_uri = f"models:/{model_name}/latest"
     sentiment_pipeline = mlflow.transformers.load_model(model_uri)
     return sentiment_pipeline
